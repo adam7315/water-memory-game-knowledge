@@ -1,0 +1,58 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #0d1b2a;
+  color: white;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #60c2f3;
+  margin-bottom: 2em;
+  font-size: 1.8em;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  background-color: #1b263b;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+/* 手機版優化 */
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
